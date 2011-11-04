@@ -1,3 +1,9 @@
+# revision 19881
+# category Package
+# catalog-ctan /macros/latex/contrib/polski
+# catalog-date 2010-09-24 16:10:39 +0200
+# catalog-license lppl1.2
+# catalog-version 1.3.3
 Name:		texlive-polski
 Version:	1.3.3
 Release:	1
@@ -74,6 +80,7 @@ resolve a name clash.).
 %doc %{_texmfdistdir}/source/latex/polski/polski.dtx
 %doc %{_texmfdistdir}/source/latex/polski/polski.ins
 %doc %{_texmfdistdir}/source/latex/polski/strony.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -84,3 +91,5 @@ resolve a name clash.).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
