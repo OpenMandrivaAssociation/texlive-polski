@@ -16,7 +16,8 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/polski.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/polski.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Requires:	texlive-pl
 Requires:	texlive-hyphen-polish
 Conflicts:	texlive-texmf <= 20110705-3
