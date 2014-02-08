@@ -6,7 +6,7 @@
 # catalog-version 1.3.3
 Name:		texlive-polski
 Version:	1.3.3
-Release:	2
+Release:	3
 Summary:	Typeset Polish documents with LaTeX and Polish fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/polski
