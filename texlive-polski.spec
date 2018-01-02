@@ -1,12 +1,6 @@
-# revision 19881
-# category Package
-# catalog-ctan /macros/latex/contrib/polski
-# catalog-date 2010-09-24 16:10:39 +0200
-# catalog-license lppl1.2
-# catalog-version 1.3.3
 Name:		texlive-polski
-Version:	1.3.3
-Release:	10
+Version:	1.3.4
+Release:	1
 Summary:	Typeset Polish documents with LaTeX and Polish fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/polski
@@ -37,39 +31,10 @@ resolve a name clash.).
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/polski/amigapl.def
-%{_texmfdistdir}/tex/latex/polski/mazovia.def
-%{_texmfdistdir}/tex/latex/polski/omlplcm.fd
-%{_texmfdistdir}/tex/latex/polski/omlplm.fd
-%{_texmfdistdir}/tex/latex/polski/omsplsy.fd
-%{_texmfdistdir}/tex/latex/polski/omxplex.fd
-%{_texmfdistdir}/tex/latex/polski/ot1patch.sty
-%{_texmfdistdir}/tex/latex/polski/ot4ccr.fd
-%{_texmfdistdir}/tex/latex/polski/ot4cmdh.fd
-%{_texmfdistdir}/tex/latex/polski/ot4cmfib.fd
-%{_texmfdistdir}/tex/latex/polski/ot4cmfr.fd
-%{_texmfdistdir}/tex/latex/polski/ot4cmr.fd
-%{_texmfdistdir}/tex/latex/polski/ot4cmss.fd
-%{_texmfdistdir}/tex/latex/polski/ot4cmtt.fd
-%{_texmfdistdir}/tex/latex/polski/plprefix.sty
-%{_texmfdistdir}/tex/latex/polski/polski.sty
-%{_texmfdistdir}/tex/latex/polski/qxenc.def
-%doc %{_texmfdistdir}/doc/latex/polski/conowego.txt
-%doc %{_texmfdistdir}/doc/latex/polski/czytaj.txt
-%doc %{_texmfdistdir}/doc/latex/polski/polski.pdf
-%doc %{_texmfdistdir}/doc/latex/polski/readme.txt
-%doc %{_texmfdistdir}/doc/latex/polski/sample-polski.tex
-%doc %{_texmfdistdir}/doc/latex/polski/sample-rysunek.mp
-%doc %{_texmfdistdir}/doc/latex/polski/sample-rysunek1.mps
+%{_texmfdistdir}/tex/latex/polski
+%doc %{_texmfdistdir}/doc/latex/polski
 #- source
-%doc %{_texmfdistdir}/source/latex/polski/ot1patch.dtx
-%doc %{_texmfdistdir}/source/latex/polski/ot1patch.ins
-%doc %{_texmfdistdir}/source/latex/polski/plfonts.fdd
-%doc %{_texmfdistdir}/source/latex/polski/plprefix.dtx
-%doc %{_texmfdistdir}/source/latex/polski/plprefix.ins
-%doc %{_texmfdistdir}/source/latex/polski/polski.dtx
-%doc %{_texmfdistdir}/source/latex/polski/polski.ins
-%doc %{_texmfdistdir}/source/latex/polski/strony.dtx
+%doc %{_texmfdistdir}/source/latex/polski
 
 #-----------------------------------------------------------------------
 %prep
@@ -80,17 +45,3 @@ resolve a name clash.).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3.3-2
-+ Revision: 754986
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.3.3-1
-+ Revision: 719281
-- texlive-polski
-- texlive-polski
-- texlive-polski
-- texlive-polski
-
