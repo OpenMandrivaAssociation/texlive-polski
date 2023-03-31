@@ -1,6 +1,6 @@
 Name:		texlive-polski
 Version:	60322
-Release:	1
+Release:	2
 Summary:	Typeset Polish documents with LaTeX and Polish fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/polski
