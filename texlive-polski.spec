@@ -3,7 +3,7 @@ Version:	60322
 Release:	2
 Summary:	Typeset Polish documents with LaTeX and Polish fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/polski
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/polski
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/polski.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/polski.doc.r%{version}.tar.xz
